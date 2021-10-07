@@ -1,7 +1,7 @@
 {
-  "name": "stellar-vanity-masa-kini",
+  "name": "stellar-vanity-address-generator",
   "version": "1.0.3",
-  "description": "Stellar Vanity Address Creator",
+  "description": "Stellar Vanity Address Generator",
   "main": "index.js",
   "bin": {
     "svag": "./index.js"
