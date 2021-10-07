@@ -21,14 +21,14 @@ do {
   const pair = StellarSdk.Keypair.random();
   const publicKey = pair.publicKey();
   if (program.prefix && words.some(w => publicKey.startsWith(w, 1))) {
-    console.log('Public: ', pair.publicKey());
-    console.log('Secret: ', pair.secret());
+    console.log('Public Key : ', pair.publicKey());
+    console.log('Secret Key : ', pair.secret());
     break;
   }
 
   if (program.suffix && words.some(w => publicKey.endsWith(w))) {
-    console.log('Public: ', pair.publicKey());
-    console.log('Secret: ', pair.secret());
+    console.log('Public Key : ', pair.publicKey());
+    console.log('Secret Key : ', pair.secret());
     break;
   }
 } while (true);
