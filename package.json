@@ -1,0 +1,29 @@
+{
+  "name": "stellar-vanity-address-generator",
+  "version": "1.0.3",
+  "description": "Stellar Vanity Address Generator",
+  "main": "index.js",
+  "bin": {
+    "svag": "./index.js"
+  },
+  "engines": {
+    "node": ">=6.12"
+  },
+  "scripts": {
+    "release": "np",
+    "test": "xo"
+  },
+  "author": "Masa Kini",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "stellar-sdk": "^8.3.0"
+  },
+  "devDependencies": {
+    "np": "^2.20.1",
+    "xo": "^0.20.3"
+  },
+  "xo": {
+    "space": true
+  }
+}
