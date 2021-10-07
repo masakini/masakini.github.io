@@ -15,7 +15,7 @@ const searchLocation = [program.prefix && 'beginning', program.suffix && 'ending
 const ignoreFlags = w => w !== '-p' && w !== '--prefix' && w !== '-s' && w !== '--suffix';
 
 const words = process.argv.slice(2).filter(ignoreFlags).map(w => w.toUpperCase());
-// console.log(` `);
+console.log(` `);
 
 do {
   const pair = StellarSdk.Keypair.random();
