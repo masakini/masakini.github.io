@@ -20,8 +20,8 @@
     "stellar-sdk": "^8.3.0"
   },
   "devDependencies": {
-    "np": "^2.20.1",
-    "xo": "^0.20.3"
+    "np": "^7.5.0",
+    "xo": "^0.45.0"
   },
   "xo": {
     "space": true
