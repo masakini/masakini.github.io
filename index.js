@@ -5,8 +5,8 @@ const pkg = require('./package.json');
 
 program
   .version(pkg.version)
-  .option('-p, --prefix', 'Find address that begins with the words specified')
-  .option('-s, --suffix', 'Find address that end with the words specified')
+  .option('-p, --prefix', 'Awalan kata, terdiri dari 3, 4 atau 5 karakter')
+  .option('-s, --suffix', 'Akhiran kata, terdiri dari 3, 4 atau 5 karakter')
   .parse(process.argv);
 
 program.suffix = program.suffix || (!program.prefix && !program.suffix);
@@ -15,7 +15,7 @@ const searchLocation = [program.prefix && 'beginning', program.suffix && 'ending
 const ignoreFlags = w => w !== '-p' && w !== '--prefix' && w !== '-s' && w !== '--suffix';
 
 const words = process.argv.slice(2).filter(ignoreFlags).map(w => w.toUpperCase());
-console.log(` `);
+// console.log(` `);
 
 do {
   const pair = StellarSdk.Keypair.random();
@@ -31,4 +31,4 @@ do {
     console.log('Secret: ', pair.secret());
     break;
   }
-} while (true); // eslint-disable-line no-constant-condition
+} while (true);
