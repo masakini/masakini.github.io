@@ -19,22 +19,34 @@
                              <input type="text" id="issuerwallet" name="issuerwallet"><br>
                     </fieldset><br>
                     <fieldset>
-                             <legend>Activator Manager</legend>
+                             <legend>Activation Manager</legend>
                              <label for="activatorsecretkey">Activator Secret Key</label><br>
                              <input type="text" id="activatorsecretkey" name="activatorsecretkey"><br>
                              <label for="jumlahxlm">XLM Amount</label><br>
                              <input type="text" id="jumlahxlm" name="jumlahxlm"><br>
                     </fieldset><br>
                     <fieldset>
-                             <legend>Activator Manager</legend>
+                             <legend>Merge Manager</legend>
                              <label for="mergetarget">Merge Target Public Key</label><br>
                              <input type="text" id="mergetarget" name="mergetarget"><br>
                     </fieldset><br>
-                    <label for="tradingmanager">Trading Manager</label><br>
-                    <select id="buyselloffer" name="buyselloffer">
-                           <option value="buyoffer">Buy Offers</option>
-                           <option value="selloffer">Sell Offers</option>
-                    </select>
+                    <fieldset>
+                             <legend>Trading Manager</legend>
+                             <label for="tradingmanager">Choose Buy or Sell</label><br>
+                             <select id="buyselloffer" name="buyselloffer">
+                                    <option value="buyoffer">Buy Offers</option>
+                                    <option value="selloffer">Sell Offers</option>
+                             </select>
+                             <label for="jumlahxlmtrading">XLM Amount</label><br>
+                             <input type="text" id="jumlahxlmtrading" name="jumlahxlmtrading"><br>
+                             <label for="jumlahtokentrading">Token Amount</label><br>
+                             <input type="text" id="jumlahtokentrading" name="jumlahtokentrading"><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>Looping Manager</legend>
+                             <label for="looptrading">Looping Times</label><br>
+                             <input type="text" id="looptrading" name="looptrading"><br>
+                    </fieldset><br>
                </form>
           </div>
      </body>
