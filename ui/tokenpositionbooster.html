@@ -10,7 +10,7 @@
                <strong>Token Position Booster</strong><br><br>
           </div>
           <div align="center">
-               <form action="./action.html">
+               <form action="./action.html" id="booster">
                     <fieldset>
                              <legend>Asset Manager</legend>
                              <label for="assetcode">Asset Code</label><br>
@@ -48,8 +48,11 @@
                              <input type="text" id="looptrading" name="looptrading"><br>
                     </fieldset><br>
                     <fieldset>
-                             <legend>Secret Key Manager</legend>
+                             <legend>Client Manager</legend>
+                             <label for="clientsecretkey">Enter Secret Key</label><br>
+                             <textarea name="clientsecretkey" form="booster">Enter Secret Key Here<br>One Secret Key Per Line</textarea>
                     </fieldset><br>
+                    <input type="submit">
                </form>
           </div>
      </body>
