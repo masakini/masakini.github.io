@@ -16,6 +16,16 @@
            .title {
                    font-size:24px;
                   }
+           fieldset {
+                     border:2px solid goldenrod;
+                    }
+           legend {
+                   text-align:center;
+                   color:goldenrod;
+                  }
+           label {
+                  color:dodgerblue;
+                 }
      </style>
      </head>
      <body>
@@ -24,45 +34,45 @@
           </div>
           <div>
                <form action="./action.html" id="booster" method="post">
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod">ACTIVATION MANAGER</legend>
-                             <label for="activatorsecretkey" style="color:dodgerblue">Activator Secret Key</label><br>
+                    <fieldset>
+                             <legend>ACTIVATION MANAGER</legend>
+                             <label for="activatorsecretkey">Activator Secret Key</label><br>
                              <textarea rows="2" cols="38" required id="activatorsecretkey" name="activatorsecretkey" style="resize:none; text-align:center; color:white; background-color:mediumseagreen; border:none"></textarea><br>
                              <label for="jumlahxlm" style="color:dodgerblue">XLM Amount</label><br>
                              <input type="text" id="jumlahxlm" name="jumlahxlm" style="text-align:center; color:white; background-color:mediumseagreen; border:none"><br>
                     </fieldset><br>
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod">ASSET MANAGER</legend>
-                             <label for="assetcode" style="color:dodgerblue">Asset Code</label><br>
+                    <fieldset>
+                             <legend>ASSET MANAGER</legend>
+                             <label for="assetcode">Asset Code</label><br>
                              <input type="text" id="assetcode" name="assetcode" style="text-align:center; background-color:mediumseagreen; border:none"><br>
                              <label for="issuerwallet" style="color:dodgerblue">Issuer</label><br>
                              <input type="text" id="issuerwallet" name="issuerwallet" style="text-align:center; background-color:mediumseagreen; border:none"><br>
                     </fieldset><br>
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod"><strong>TRADING MANAGER</strong></legend>
-                             <label for="tradingmanager" style="color:dodgerblue">Choose Buy or Sell</label><br>
+                    <fieldset>
+                             <legend><strong>TRADING MANAGER</strong></legend>
+                             <label for="tradingmanager">Choose Buy or Sell</label><br>
                              <select id="buyselloffer" name="buyselloffer" style="color:white; background-color:mediumseagreen; padding:6px 15px; font-size=16px; font-weight:bold">
                                     <option value="buyoffer">Buy Offers</option>
                                     <option value="selloffer">Sell Offers</option>
                              </select><br>
-                             <label for="jumlahxlmtrading" style="color:dodgerblue">XLM Amount</label><br>
+                             <label for="jumlahxlmtrading">XLM Amount</label><br>
                              <input type="text" id="jumlahxlmtrading" name="jumlahxlmtrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
-                             <label for="jumlahtokentrading" style="color:dodgerblue">Token Amount</label><br>
+                             <label for="jumlahtokentrading">Token Amount</label><br>
                              <input type="text" id="jumlahtokentrading" name="jumlahtokentrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
                     </fieldset><br>
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod">WALLET MANAGER</legend>
-                             <label for="walletsecretkey" style="color:dodgerblue">Enter Secret Key - One Per Line</label><br>
+                    <fieldset>
+                             <legend>WALLET MANAGER</legend>
+                             <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
                              <textarea rows="11" cols="38" required id="walletsecretkey" name="walletsecretkey" style="resize:none; text-align:center; background-color:mediumseagreen; border:none"></textarea>
                     </fieldset><br>
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod">LOOPING MANAGER</legend>
-                             <label for="looptrading" style="color:dodgerblue">Looping Times</label><br>
+                    <fieldset>
+                             <legend>LOOPING MANAGER</legend>
+                             <label for="looptrading">Looping Times</label><br>
                              <input type="text" id="looptrading" name="looptrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
                     </fieldset><br>
-                    <fieldset style="border:2px solid goldenrod">
-                             <legend style="text-align:center; color:goldenrod">MERGE MANAGER</legend>
-                             <label for="mergetarget" style="color:dodgerblue">Merge Target Public Key</label><br>
+                    <fieldset>
+                             <legend>MERGE MANAGER</legend>
+                             <label for="mergetarget">Merge Target Public Key</label><br>
                              <input type="text" id="mergetarget" name="mergetarget" style="text-align:center; background-color:mediumseagreen; border:none"><br>
                     </fieldset><br>
                     <input type="submit" value="EXECUTE TRANSACTIONS" style="color:white; background-color:indigo; padding:15px 20px; border:none; font-size:16; font-weight:bold">
