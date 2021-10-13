@@ -67,7 +67,18 @@
           </div>
           <div>
                <form action="./step-5-notif.html" id="step-5" name="step-5" method="get">
-
+                    <fieldset>
+                             <legend>ASSET MANAGER</legend>
+                             <label for="assetcode">Asset Code</label><br>
+                             <textarea rows="1" cols="28" required id="assetcode" name="assetcode"></textarea><br>
+                             <label for="issuerwallet">Issuer</label><br>
+                             <textarea rows="2" cols="28" required id="issuerwallet" name="issuerwallet"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>WALLET MANAGER</legend>
+                             <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
+                             <textarea rows="11" cols="28" required id="walletsecretkey" name="walletsecretkey"></textarea><br>
+                    </fieldset><br>
                     <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
                </form><br>
                <form action="./step-6.html" id="bypass-step-5" name="bypass-step-5" method="get">
