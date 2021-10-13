@@ -79,6 +79,23 @@
                              <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
                              <textarea rows="11" cols="28" required id="walletsecretkey" name="walletsecretkey"></textarea><br>
                     </fieldset><br>
+                    <fieldset>
+                             <legend>TRADING MANAGER</legend>
+                             <label for="tradingmanager">Choose Buy or Sell</label><br>
+                             <select id="buyselloffer" name="buyselloffer">
+                                    <option value="buyoffer">Buy Offers</option>
+                                    <option value="selloffer">Sell Offers</option>
+                             </select><br>
+                             <label for="jumlahxlmtrading">XLM Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahxlmtrading" name="jumlahxlmtrading"></textarea><br>
+                             <label for="jumlahtokentrading">Token Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahtokentrading" name="jumlahtokentrading"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>LOOPING MANAGER</legend>
+                             <label for="looptrading">Looping Process Per Wallet</label><br>
+                             <textarea rows="1" cols="28" required id="looptrading" name="looptrading"></textarea><br>
+                    </fieldset><br>
                     <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
                </form><br>
                <form action="./step-4.html" id="bypass-step-3" name="bypass-step-3" method="get">
