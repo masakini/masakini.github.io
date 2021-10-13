@@ -26,6 +26,21 @@
            label {
                   color:dodgerblue;
                  }
+           textarea {
+                     resize:none;
+                     text-align:center;
+                     color:white;
+                     font-weight:bold;
+                     background-color:mediumseagreen;
+                     border:none;
+                    }
+           select {
+                   color:white;
+                   background-color:mediumseagreen;
+                   padding:6px 15px;
+                   font-size=16px;
+                   font-weight:bold;
+                  }
      </style>
      </head>
      <body>
@@ -37,43 +52,43 @@
                     <fieldset>
                              <legend>ACTIVATION MANAGER</legend>
                              <label for="activatorsecretkey">Activator Secret Key</label><br>
-                             <textarea rows="2" cols="38" required id="activatorsecretkey" name="activatorsecretkey" style="resize:none; text-align:center; color:white; background-color:mediumseagreen; border:none"></textarea><br>
-                             <label for="jumlahxlm" style="color:dodgerblue">XLM Amount</label><br>
-                             <input type="text" id="jumlahxlm" name="jumlahxlm" style="text-align:center; color:white; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="2" cols="38" required id="activatorsecretkey" name="activatorsecretkey"></textarea><br>
+                             <label for="jumlahxlm">XLM Amount</label><br>
+                             <textarea rows="1" cols="38" required id="jumlahxlm" name="jumlahxlm"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>ASSET MANAGER</legend>
                              <label for="assetcode">Asset Code</label><br>
-                             <input type="text" id="assetcode" name="assetcode" style="text-align:center; background-color:mediumseagreen; border:none"><br>
-                             <label for="issuerwallet" style="color:dodgerblue">Issuer</label><br>
-                             <input type="text" id="issuerwallet" name="issuerwallet" style="text-align:center; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="1" cols="38" required id="assetcode" name="assetcode"></textarea><br>
+                             <label for="issuerwallet">Issuer</label><br>
+                             <textarea rows="2" cols="38" required id="issuerwallet" name="issuerwallet"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend><strong>TRADING MANAGER</strong></legend>
                              <label for="tradingmanager">Choose Buy or Sell</label><br>
-                             <select id="buyselloffer" name="buyselloffer" style="color:white; background-color:mediumseagreen; padding:6px 15px; font-size=16px; font-weight:bold">
+                             <select id="buyselloffer" name="buyselloffer">
                                     <option value="buyoffer">Buy Offers</option>
                                     <option value="selloffer">Sell Offers</option>
                              </select><br>
                              <label for="jumlahxlmtrading">XLM Amount</label><br>
-                             <input type="text" id="jumlahxlmtrading" name="jumlahxlmtrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="1" cols="38" required id="jumlahxlmtrading" name="jumlahxlmtrading"></textarea><br>
                              <label for="jumlahtokentrading">Token Amount</label><br>
-                             <input type="text" id="jumlahtokentrading" name="jumlahtokentrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="1" cols="38" required id="jumlahtokentrading" name="jumlahtokentrading"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>WALLET MANAGER</legend>
                              <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
-                             <textarea rows="11" cols="38" required id="walletsecretkey" name="walletsecretkey" style="resize:none; text-align:center; background-color:mediumseagreen; border:none"></textarea>
+                             <textarea rows="11" cols="38" required id="walletsecretkey" name="walletsecretkey"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>LOOPING MANAGER</legend>
                              <label for="looptrading">Looping Times</label><br>
-                             <input type="text" id="looptrading" name="looptrading" style="text-align:center; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="2" cols="38" required id="looptrading" name="looptrading"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>MERGE MANAGER</legend>
                              <label for="mergetarget">Merge Target Public Key</label><br>
-                             <input type="text" id="mergetarget" name="mergetarget" style="text-align:center; background-color:mediumseagreen; border:none"><br>
+                             <textarea rows="2" cols="38" required id="mergetarget" name="mergetarget"></textarea><br>
                     </fieldset><br>
                     <input type="submit" value="EXECUTE TRANSACTIONS" style="color:white; background-color:indigo; padding:15px 20px; border:none; font-size:16; font-weight:bold">
                </form><br><br>
