@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title>Token Position Booster</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <style>
+           body     {
+                     color:white; 
+                     background-color:black; 
+                     font-weight:bold; 
+                    }
+           div      {
+                     text-align:center; 
+                    }
+           .title   {
+                     font-size:28px; 
+                    }
+           fieldset {
+                     border:2px solid goldenrod; 
+                    }
+           legend   {
+                     font-size:22px; 
+                     text-align:center; 
+                     color:goldenrod; 
+                    }
+           label    {
+                     font-size:20px; 
+                     color:dodgerblue; 
+                    }
+           textarea {
+                     resize:none; 
+                     text-align:center; 
+                     color:white; 
+                     font-size:18px; 
+                     font-weight:bold; 
+                     padding:6px 2px; 
+                     background-color:mediumseagreen; 
+                     border:none; 
+                    }
+           select   {
+                     color:white; 
+                     background-color:mediumseagreen; 
+                     padding:6px 15px; 
+                     font-size=22px; 
+                     font-weight:bold; 
+                    }
+           .execute {
+                     color:white; 
+                     background-color:indigo; 
+                     padding:15px 20px; 
+                     border:none; 
+                     font-size:22px; 
+                     font-weight:bold; 
+                    }
+     </style>
+     </head>
+     <body>
+          <div class="title">
+               Token Position Booster<br><br>
+          </div>
+          <div>
+               <form action="./action.html" id="booster" name="booster" method="post">
+                    <fieldset>
+                             <legend>ACTIVATION MANAGER</legend>
+                             <label for="activatorsecretkey">Activator Secret Key</label><br>
+                             <textarea rows="2" cols="28" required id="activatorsecretkey" name="activatorsecretkey"></textarea><br>
+                             <label for="jumlahxlm">XLM Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahxlm" name="jumlahxlm"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>ASSET MANAGER</legend>
+                             <label for="assetcode">Asset Code</label><br>
+                             <textarea rows="1" cols="28" required id="assetcode" name="assetcode"></textarea><br>
+                             <label for="issuerwallet">Issuer</label><br>
+                             <textarea rows="2" cols="28" required id="issuerwallet" name="issuerwallet"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend><strong>TRADING MANAGER</strong></legend>
+                             <label for="tradingmanager">Choose Buy or Sell</label><br>
+                             <select id="buyselloffer" name="buyselloffer">
+                                    <option value="buyoffer">Buy Offers</option>
+                                    <option value="selloffer">Sell Offers</option>
+                             </select><br>
+                             <label for="jumlahxlmtrading">XLM Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahxlmtrading" name="jumlahxlmtrading"></textarea><br>
+                             <label for="jumlahtokentrading">Token Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahtokentrading" name="jumlahtokentrading"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>WALLET MANAGER</legend>
+                             <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
+                             <textarea rows="11" cols="28" required id="walletsecretkey" name="walletsecretkey"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>LOOPING MANAGER</legend>
+                             <label for="looptrading">Looping Process Per Wallet</label><br>
+                             <textarea rows="1" cols="28" required id="looptrading" name="looptrading"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>MERGING MANAGER</legend>
+                             <label for="mergetarget">Merger Target Public Key</label><br>
+                             <textarea rows="2" cols="28" required id="mergetarget" name="mergetarget"></textarea><br>
+                    </fieldset><br>
+                    <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
+               </form><br><br>
+               Coding By <a href="https://t.me/xoerbiston">Xoer Biston</a><br>
+               UI By <a href="https://t.me/IdamanMasaKini">Masa Kini</a><br><br>
+               <i>Best View on Via Browser</i><br>
+          </div><br>
+     </body>
+</html>
