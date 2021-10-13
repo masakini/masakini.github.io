@@ -67,7 +67,16 @@
           </div>
           <div>
                <form action="./step-6-notif.html" id="step-6" name="step-6" method="get">
-
+                    <fieldset>
+                             <legend>WALLET MANAGER</legend>
+                             <label for="walletsecretkey">Enter Secret Key - One Per Line</label><br>
+                             <textarea rows="11" cols="28" required id="walletsecretkey" name="walletsecretkey"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>MERGING MANAGER</legend>
+                             <label for="mergetarget">Merger Target Public Key</label><br>
+                             <textarea rows="2" cols="28" required id="mergetarget" name="mergetarget"></textarea><br>
+                    </fieldset><br>
                     <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
                </form><br>
                <form action="./step-1.html" id="bypass-step-6" name="bypass-step-6" method="get">
