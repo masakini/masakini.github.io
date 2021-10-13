@@ -5,27 +5,27 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <style>
-           body {
-                 color:white;
-                 background-color:black;
-                 font-weight:bold;
-                }
-           div {
-                text-align:center;
-               }
-           .title {
-                   font-size:24px;
-                  }
+           body     {
+                     color:white;
+                     background-color:black;
+                     font-weight:bold;
+                    }
+           div      {
+                     text-align:center;
+                    }
+           .title   {
+                     font-size:24px;
+                    }
            fieldset {
                      border:2px solid goldenrod;
                     }
-           legend {
-                   text-align:center;
-                   color:goldenrod;
-                  }
-           label {
-                  color:dodgerblue;
-                 }
+           legend   {
+                     text-align:center;
+                     color:goldenrod;
+                    }
+           label    {
+                     color:dodgerblue;
+                    }
            textarea {
                      resize:none;
                      text-align:center;
@@ -34,13 +34,21 @@
                      background-color:mediumseagreen;
                      border:none;
                     }
-           select {
-                   color:white;
-                   background-color:mediumseagreen;
-                   padding:6px 15px;
-                   font-size=16px;
-                   font-weight:bold;
-                  }
+           select   {
+                     color:white;
+                     background-color:mediumseagreen;
+                     padding:6px 15px;
+                     font-size=16px;
+                     font-weight:bold;
+                    }
+           .execute {
+                     color:white;
+                     background-color:indigo;
+                     padding:15px 20px;
+                     border:none;
+                     font-size:16;
+                     font-weight:bold;
+                    }
      </style>
      </head>
      <body>
@@ -83,14 +91,14 @@
                     <fieldset>
                              <legend>LOOPING MANAGER</legend>
                              <label for="looptrading">Looping Times</label><br>
-                             <textarea rows="2" cols="38" required id="looptrading" name="looptrading"></textarea><br>
+                             <textarea rows="1" cols="38" required id="looptrading" name="looptrading"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>MERGE MANAGER</legend>
                              <label for="mergetarget">Merge Target Public Key</label><br>
                              <textarea rows="2" cols="38" required id="mergetarget" name="mergetarget"></textarea><br>
                     </fieldset><br>
-                    <input type="submit" value="EXECUTE TRANSACTIONS" style="color:white; background-color:indigo; padding:15px 20px; border:none; font-size:16; font-weight:bold">
+                    <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
                </form><br><br>
                Coding By <a href="https://t.me/xoerbiston">Xoer Biston</a><br>
                UI By <a href="https://t.me/IdamanMasaKini">Masa Kini</a><br><br>
