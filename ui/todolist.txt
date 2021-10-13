@@ -1,0 +1,8 @@
+Token Position Booster Wizard.
+
+STEP 1 : Wallet Activation.
+STEP 2 : Add Trustline.
+STEP 3 : Trading.
+STEP 4 : Transfer Token (Instead of XLM).
+STEP 5 : Remove Trustline.
+STEP 6 : Merge Wallet.
