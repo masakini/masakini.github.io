@@ -64,7 +64,7 @@
                WALLET ACTIVATION<br><br>
           </div>
           <div>
-               <form onsubmit="return execute()" id="step-1" name="step-1">
+               <form onsubmit="return executetx()" id="step-1" name="step-1">
                     <fieldset>
                              <legend>ACTIVATION MANAGER</legend>
                              <label for="activatorsecretkey">Activator Secret Key</label><br>
@@ -92,7 +92,7 @@
 
 <script type="text/javascript">
 
-function execute() {
+function executetx() {
 
 const server = new StellarSdk.Server('https://horizon.stellar.org')
 var source = StellarSdk.Keypair.fromSecret("activatorsecretkey")
