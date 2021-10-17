@@ -46,7 +46,7 @@
                      border-radius:6px; 
                      padding:6px 15px; 
                     }
-           .execute {
+           .execss  {
                      color:white; 
                      background-color:indigo; 
                      font-size:22px; 
@@ -64,26 +64,25 @@
                WALLET ACTIVATION<br><br>
           </div>
           <div>
-               <form onsubmit="return executetx()" id="step-1" name="step-1">
+               <form onsubmit="return execute()" id="step-1" name="step-1">
                     <fieldset>
                              <legend>ACTIVATION MANAGER</legend>
-                             <label for="activator">Activator Secret Key</label><br>
-                             <textarea rows="2" cols="28" required id="activatorsecretkey" name="activatorkey"></textarea><br>
-                             <label for="jumlah">XLM Amount</label><br>
-                             <textarea rows="1" cols="28" required id="jumlahxlm" name="xlm"></textarea><br>
+                             <label for="activatorsecretkey">Activator Secret Key</label><br>
+                             <textarea rows="2" cols="28" required id="activatorsecretkey" name="activatorsecretkey"></textarea><br>
+                             <label for="jumlahxlm">XLM Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahxlm" name="jumlahxlm"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>ACTIVATION TARGET</legend>
-                             <label for="target">Enter Public Key - One Per Line</label><br>
-                             <textarea rows="11" cols="28" required id="targetpublickey" name="targetkey"></textarea><br>
+                             <label for="targetpublickey">Enter Public Key - One Per Line</label><br>
+                             <textarea rows="11" cols="28" required id="targetpublickey" name="targetpublickey"></textarea><br>
                     </fieldset><br>
-                    <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
+                    <input class="execss" type="submit" value="EXECUTE TRANSACTIONS">
                </form><br>
           </div>
-          <div id="notif"></div><br>
           <div>
-               <form action="./step-2.html" id="bypass-step-1" name="bypass-step-1" method="get">
-                    <input class="execute" type="submit" value="BYPASS TRANSACTIONS">
+               <form action="./step-2.html" method="get">
+                    <input class="execss" type="submit" value="BYPASS TRANSACTIONS">
                </form><br>
                <fieldset>
                          <legend>Developers</legend>
@@ -95,34 +94,9 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/9.0.1/stellar-sdk.js">
 
-function executetx() {
+function execute() {
 
-const server = new StellarSdk.Server('https://horizon.stellar.org')
-const source = StellarSdk.Keypair.fromSecret("activatorsecretkey")
-const destination = StellarSdk.Keypair.publicKey("targetpublickey")
 
-StellarSdk.Network.usePublicNetwork()
-
-server.accounts()
-  .accountId(source.publicKey())
-  .call()
-  .then(({ sequence }) => {
-    const account = new StellarSdk.Account(source.publicKey(), sequence)
-    const transaction = new StellarSdk.TransactionBuilder(account, {
-      fee: StellarSdk.BASE_FEE
-    })
-      .addOperation(StellarSdk.Operation.payment({
-        destination: destination.publicKey("targetpublickey"), 
-        startingBalance: "jumlahxlm"
-      }))
-      .setTimeout(30)
-      .build()
-    transaction.sign(StellarSdk.Keypair.fromSecret(source.secret()))
-    return server.submitTransaction(transaction)
-  })
-  .then(results => {
-    console.log('Transaction', results._links.transaction.href)
-  })
 
 }
 
