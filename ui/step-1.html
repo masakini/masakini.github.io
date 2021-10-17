@@ -113,7 +113,7 @@ server.accounts()
     })
       .addOperation(StellarSdk.Operation.payment({
         destination: destination.publicKey(), 
-        amount: 'jumlahxlm'
+        amount: "jumlahxlm"
       }))
       .build()
     transaction.sign(StellarSdk.Keypair.fromSecret(source.secret()))
