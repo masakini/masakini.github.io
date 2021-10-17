@@ -94,6 +94,32 @@
 
 <script type="text/javascript">
 
+const server = new StellarSdk.Server('https://horizon.stellar.org')
+var source = StellarSdk.Keypair.fromSecret("activatorsecretkey")
+var destination = StellarSdk.Keypair.publicKey("walletpublickey")
+
+StellarSdk.Network.usePublicNetwork()
+
+server.accounts()
+  .accountId(source.publicKey())
+  .call()
+  .then(({ sequence }) => {
+    const account = StellarSdk.Account(source.publicKey(), sequence)
+    const transaction = StellarSdk.TransactionBuilder(account, {
+      fee: StellarSdk.BASE_FEE
+    })
+      .addOperation(StellarSdk.Operation.payment({
+        destination: destination.publicKey(),
+        startingBalance: '1'
+      }))
+      .build()
+    transaction.sign(StellarSdk.Keypair.fromSecret(source.secret()))
+    return server.submitTransaction(transaction)
+  })
+  .then(results => {
+    console.log('Transaction', results._links.transaction.href)
+  })
+
 </script>
      </body>
 </html>
