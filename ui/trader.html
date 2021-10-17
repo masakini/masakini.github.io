@@ -26,7 +26,7 @@
                      text-align:center; 
                      color:goldenrod; 
                     }
-           .label   {
+           label    {
                      font-size:20px; 
                      color:dodgerblue; 
                     }
@@ -59,15 +59,8 @@
                      border:none; 
                      border-radius:10px; 
                     }
-           .upload {
+           .text    {
                      color:white; 
-                     background-color:indigo; 
-                     font-size:18px; 
-                     font-weight:bold; 
-                     height:48px; 
-                     width:85%; 
-                     border:none; 
-                     border-radius:10px; 
                     }
      </style>
      </head>
@@ -94,11 +87,11 @@
                     <fieldset>
                              <legend>FILE MANAGER</legend>
                              <input class="hidden" type="file" id="filemanager">
-                             <label class="upload" for="filemanager">UPLOAD FILE</label>
+                             <label class="text" for="filemanager">UPLOAD FILE</label>
                     </fieldset><br>
                     <fieldset>
                              <legend>LOOPING MANAGER</legend>
-                             <label class="label" for="looptrading">Looping Process Per Wallet</label><br>
+                             <label for="looptrading">Looping Process Per Wallet</label><br>
                              <textarea rows="1" cols="28" required id="looptrading"></textarea><br>
                     </fieldset><br>
                     <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
