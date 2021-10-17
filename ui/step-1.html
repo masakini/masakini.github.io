@@ -64,7 +64,7 @@
                WALLET ACTIVATION<br><br>
           </div>
           <div>
-               <form onsubmit="return execute()" id="step-1" name="step-1">
+               <form onsubmit="return execute()" id="step-1">
                     <fieldset>
                              <legend>ACTIVATION MANAGER</legend>
                              <label for="activatorsecretkey">Activator Secret Key</label><br>
@@ -145,13 +145,15 @@ server
     return server.submitTransaction(transaction);
   })
   .then(function (result) {
-    console.log("Success! Results:", result);
+    // console.log("Success! Results:", result);
+    document.write("Success");
   })
   .catch(function (error) {
-    console.error("Something went wrong!", error);
+    // console.error("Something went wrong!", error);
     // If the result is unknown (no response body, timeout etc.) we simply resubmit
     // already built transaction:
     // server.submitTransaction(transaction);
+    document.write("Error");
   });
 
 }
