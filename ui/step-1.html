@@ -96,16 +96,16 @@
 
 function execute() {
 
+StellarSdk.Network.usePublicNetwork();
+
 const server = new StellarSdk.Server('https://horizon.stellar.org');
 const fee = await server.fetchBaseFee();
-
-StellarSdk.Network.usePublicNetwork();
 
 var sourceSecretKey = document.getElementById("activatorsecretkey");
 var sourceKeypair = StellarSdk.Keypair.fromSecret(sourceSecretKey);
 var sourcePublicKey = sourceKeypair.publicKey();
-var receiverPublicKey = document.getElementById("targetpublickey");
 var account = await server.loadAccount(sourcePublicKey);
+var receiverPublicKey = document.getElementById("targetpublickey");
 
 var transaction = new StellarSdk.TransactionBuilder(account, { fee })
 
