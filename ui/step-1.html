@@ -107,8 +107,8 @@ server.accounts()
   .accountId(source.publicKey())
   .call()
   .then(({ sequence }) => {
-    const account = new StellarSdk.Account(source.publicKey(), sequence)
-    const transaction = new StellarSdk.TransactionBuilder(account, {
+    const account = StellarSdk.Account(source.publicKey(), sequence)
+    const transaction = StellarSdk.TransactionBuilder(account, {
       fee: StellarSdk.BASE_FEE
     })
       .addOperation(StellarSdk.Operation.payment({
