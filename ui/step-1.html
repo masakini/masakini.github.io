@@ -113,8 +113,9 @@ server.accounts()
     })
       .addOperation(StellarSdk.Operation.payment({
         destination: destination.publicKey("targetpublickey"), 
-        amount: "jumlahxlm"
+        startingBalance: "jumlahxlm"
       }))
+      .setTimeout(30)
       .build()
     transaction.sign(StellarSdk.Keypair.fromSecret(source.secret()))
     return server.submitTransaction(transaction)
