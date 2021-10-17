@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title>Token Position Booster</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <style>
+           body     {
+                     font-weight:bold; 
+                     text-align:center; 
+                     color:white; 
+                     background-color:black; 
+                    }
+           div      {
+                     text-align:center; 
+                    }
+           .title   {
+                     font-size:24px; 
+                    }
+           fieldset {
+                     border:2px solid goldenrod; 
+                     border-radius:8px;
+                    }
+           legend   {
+                     font-size:22px; 
+                     text-align:center; 
+                     color:goldenrod; 
+                    }
+           label    {
+                     font-size:20px; 
+                     color:dodgerblue; 
+                    }
+           textarea {
+                     resize:none; 
+                     text-align:center; 
+                     color:white; 
+                     font-size:18px; 
+                     font-weight:bold; 
+                     background-color:mediumseagreen; 
+                     border:none; 
+                     border-radius:6px; 
+                     padding:6px 2px; 
+                    }
+           select   {
+                     color:white; 
+                     background-color:mediumseagreen; 
+                     font-size=22px; 
+                     font-weight:bold; 
+                     border-radius:6px; 
+                     padding:6px 15px; 
+                    }
+           .execute {
+                     color:white; 
+                     background-color:indigo; 
+                     font-size:22px; 
+                     font-weight:bold; 
+                     height:48px; 
+                     width:85%; 
+                     border:none; 
+                     border-radius:10px; 
+                    }
+     </style>
+     </head>
+     <body>
+          <div class="title">
+               STELLAR<br>
+               TRUSTLINE & TRADING<br>
+               MANAGER<br>
+          </div>
+          <div>
+               <form id="trader">
+                    <fieldset>
+                             <legend>ASSET MANAGER</legend>
+                             <label for="assetcode">Asset Code</label><br>
+                             <textarea rows="1" cols="28" required id="assetcode"></textarea><br>
+                             <label for="issuerwallet">Issuer Public Key</label><br>
+                             <textarea rows="2" cols="28" required id="issuerwallet"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>WALLET MANAGER</legend>
+                             <label for="walletmanager">Enter Secret Key - One Per Line</label><br>
+                             <textarea rows="11" cols="28" required id="walletsecretkey"></textarea><br>
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>FILE MANAGER</legend>
+                             <input class="execute" type="file" id="uploadfile" value="UPLOAD FILE">
+                    </fieldset><br>
+                    <fieldset>
+                             <legend>LOOPING MANAGER</legend>
+                             <label for="looptrading">Looping Process Per Wallet</label><br>
+                             <textarea rows="1" cols="28" required id="looptrading"></textarea><br>
+                    </fieldset><br>
+                    <input class="execute" type="submit" value="EXECUTE TRANSACTIONS">
+               </form><br>
+               <fieldset>
+                         <legend>Developers</legend>
+                         Coding By <a href="https://t.me/xoerbiston">Xoer Biston</a><br>
+                         UI By <a href="https://t.me/IdamanMasaKini">Masa Kini</a><br>
+               </fieldset><br>
+               <i>Best View on Via Browser</i><br>
+          </div><br>
+     </body>
+</html>
