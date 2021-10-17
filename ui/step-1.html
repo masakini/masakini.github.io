@@ -68,9 +68,9 @@
                     <fieldset>
                              <legend>ACTIVATION MANAGER</legend>
                              <label for="activator">Activator Secret Key</label><br>
-                             <textarea rows="2" cols="28" required id="activatorsecretkey" name="activatorsecretkey"></textarea><br>
-                             <label for="jumlahxlm">XLM Amount</label><br>
-                             <textarea rows="1" cols="28" required id="jumlahxlm" name="jumlahxlm"></textarea><br>
+                             <textarea rows="2" cols="28" required id="activatorsecretkey" name="activatorkey"></textarea><br>
+                             <label for="jumlah">XLM Amount</label><br>
+                             <textarea rows="1" cols="28" required id="jumlahxlm" name="xlm"></textarea><br>
                     </fieldset><br>
                     <fieldset>
                              <legend>ACTIVATION TARGET</legend>
@@ -93,7 +93,7 @@
                <i>Best View on Via Browser</i><br>
           </div><br>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/8.3.0/stellar-sdk.js">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/9.0.1/stellar-sdk.js">
 
 function executetx() {
 
@@ -112,7 +112,7 @@ server.accounts()
       fee: StellarSdk.BASE_FEE
     })
       .addOperation(StellarSdk.Operation.payment({
-        destination: destination.publicKey(), 
+        destination: destination.publicKey("targetpublickey"), 
         amount: "jumlahxlm"
       }))
       .build()
