@@ -92,6 +92,8 @@
 
 <script type="text/javascript">
 
+function execute() {
+
 const server = new StellarSdk.Server('https://horizon.stellar.org')
 var source = StellarSdk.Keypair.fromSecret("activatorsecretkey")
 var destination = StellarSdk.Keypair.publicKey("targetpublickey")
@@ -117,6 +119,8 @@ server.accounts()
   .then(results => {
     console.log('Transaction', results._links.transaction.href)
   })
+
+}
 
 </script>
      </body>
